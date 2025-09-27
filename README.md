@@ -183,5 +183,5 @@ Test endpoints interactively at [http://127.0.0.1:8000/docs](http://127.0.0.1:80
 - **Backend Framework:** FastAPI
 - **Database ORM:** SQLAlchemy
 - **Data Validation:** Pydantic
-- **Database:** SQLite
+- **Database:** Neon DB
 - **ASGI Server:** Uvicorn

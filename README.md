@@ -1,10 +1,10 @@
-# IPL Data Ingestion and API
+# IPL Data Scraping and API
 
 This project provides a complete solution for ingesting historical Indian Premier League (IPL) match data, storing it in a robust relational database, and exposing it through a high-performance RESTful API built with FastAPI.
 
 ## Key Features
 
-- **Automated Data Ingestion:** Script processes IPL data files from 2008 to 2025 (`ipl_{year}.json`), cleans the data, and populates the database.
+- **Automated Data Scraping:** Script scrapes and process IPL data files from 2008 to 2025 (`ipl_{year}.json`), cleans the data, and populates the database.
 - **Robust Database Schema:** Uses SQLAlchemy for relational schema covering players, teams, matches, innings, and batting statistics.
 - **Data Cleaning:** Cleans player names by removing suffixes like `(c)` and `†` to prevent duplicates.
 - **High-Performance API:** Built with Python and FastAPI to serve cleaned IPL data.
@@ -70,7 +70,7 @@ There are two main steps: ingesting the data and starting the API server.
 Run the ingestion script to create `ipl_stats.db` and populate it with data from your JSON files.
 
 ```sh
-python data_ingestion.py
+python ingest.py
 ```
 
 ### Step 2: Start the API Server
